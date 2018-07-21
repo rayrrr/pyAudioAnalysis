@@ -17,9 +17,9 @@ from scipy.fftpack.realtransforms import dct
 from scipy.signal import fftconvolve
 from scipy.signal import lfilter, hamming
 
-import audioBasicIO
-import audioTrainTest as aT
-import utilities
+from pyAudioAnalysis import audioBasicIO
+from pyAudioAnalysis import audioTrainTest as aT
+from pyAudioAnalysis import utilities
 #from scikits.talkbox import lpc
 
 # reload(sys)

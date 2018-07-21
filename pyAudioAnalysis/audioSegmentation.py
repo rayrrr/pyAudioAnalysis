@@ -15,9 +15,9 @@ import sklearn.discriminant_analysis
 from six.moves import cPickle
 from scipy.spatial import distance
 
-import audioBasicIO
-import audioFeatureExtraction as aF
-import audioTrainTest as aT
+from pyAudioAnalysis import audioBasicIO
+from pyAudioAnalysis import audioFeatureExtraction as aF
+from pyAudioAnalysis import audioTrainTest as aT
 
 """ General utility functions """
 

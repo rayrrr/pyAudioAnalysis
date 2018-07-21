@@ -12,8 +12,8 @@ import sys
 from pylab import *
 from scipy.spatial import distance
 
-import audioFeatureExtraction as aF
-import audioTrainTest as aT
+from pyAudioAnalysis import audioFeatureExtraction as aF
+from pyAudioAnalysis import audioTrainTest as aT
 
 
 def generateColorMap():

@@ -4,13 +4,16 @@ import os
 import numpy
 import glob
 import matplotlib.pyplot as plt
-import audioFeatureExtraction as aF
-import audioSegmentation as aS
-import audioTrainTest as aT
-import audioVisualization as aV
-import audioBasicIO
-import scipy.io.wavfile as wavfile
 import matplotlib.patches
+import scipy.io.wavfile as wavfile
+
+from pyAudioAnalysis import audioFeatureExtraction as aF
+from pyAudioAnalysis import audioSegmentation as aS
+from pyAudioAnalysis import audioTrainTest as aT
+from pyAudioAnalysis import audioVisualization as aV
+from pyAudioAnalysis import audioBasicIO
+
+
 
 
 def dirMp3toWavWrapper(directory, samplerate, channels):

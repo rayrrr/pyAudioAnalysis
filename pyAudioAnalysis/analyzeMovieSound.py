@@ -10,9 +10,9 @@ import sys
 
 from six.moves import cPickle
 
-import audioBasicIO
-import audioSegmentation as aS
-import audioTrainTest as aT
+from pyAudioAnalysis import audioBasicIO
+from pyAudioAnalysis import audioSegmentation as aS
+from pyAudioAnalysis import audioTrainTest as aT
 
 minDuration = 7
 

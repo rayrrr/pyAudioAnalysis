@@ -18,9 +18,9 @@ import wave
 from scipy.fftpack import fft
 from scipy.fftpack import rfft
 
-import audioFeatureExtraction as aF
-import audioTrainTest as aT
-import audioSegmentation as aS
+from pyAudioAnalysis import audioFeatureExtraction as aF
+from pyAudioAnalysis import audioTrainTest as aT
+from pyAudioAnalysis import audioSegmentation as aS
 
 Fs = 16000
 

@@ -5,7 +5,7 @@ import os
 import scipy.io.wavfile as wavfile
 import sys
 
-import audioBasicIO
+from pyAudioAnalysis import audioBasicIO
 
 
 def annotation2files(wavFile, csvFile):
