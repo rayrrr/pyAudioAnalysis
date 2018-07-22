@@ -78,7 +78,7 @@ def textListToColors(names):
 
 def textListToColorsSimple(names):
     '''
-    Generates a list of colors based on a list of names (strings). Similar strings correspond to similar colors. 
+    Generates a list of colors based on a list of names (strings). Similar strings correspond to similar colors.
     '''
     uNames = list(set(names))
     uNames.sort()

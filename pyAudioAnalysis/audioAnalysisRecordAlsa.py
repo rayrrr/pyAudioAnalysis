@@ -81,7 +81,7 @@ def recordAnalyzeAudio(duration, outputWavFile, midTermBufferSizeSec, modelName,
 
     This function is used to record and analyze audio segments, in a fix window basis.
 
-    ARGUMENTS: 
+    ARGUMENTS:
     - duration			total recording duration
     - outputWavFile			path of the output WAV file
     - midTermBufferSizeSec		(fix)segment length in seconds

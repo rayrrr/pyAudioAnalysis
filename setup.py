@@ -29,5 +29,5 @@ setup(
     package_dir={'pyAudioAnalysis': 'pyAudioAnalysis'},
     package_data={'pyAudioAnalysis': ['data/svm*', 'data/gb*', 'data/et*', 'data/hmm*', 'data/knn*', 'data/rf*']},
 
-    install_requires=['numpy', 'matplotlib', 'scipy', 'scikit_learn', 'hmmlearn', 'simplejson', 'eyeD3', 'pydub', 'six'],
+    install_requires=['numpy', 'matplotlib', 'scipy', 'scikit_learn', 'hmmlearn', 'simplejson', 'eyeD3', 'git+ssh://git@github.com/rayrrr/pydub.git', 'six'],
 )

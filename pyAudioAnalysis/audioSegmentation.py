@@ -709,7 +709,7 @@ def silenceRemoval(x, Fs, stWin, stStep, smoothWindow=0.5, Weight=0.5, plot=Fals
     # find probability Threshold as a weighted average of top 10% and lower
     # 10% of the values
     ProbOnsetSorted = numpy.sort(ProbOnset)
-    Nt = ProbOnsetSorted.shape[0] / 10
+    Nt = ProbOnsetSorted.shape[0] // 10
     T = (numpy.mean((1 - Weight) *
                     ProbOnsetSorted[0:Nt]) + Weight * numpy.mean(ProbOnsetSorted[-Nt::]))
 
@@ -1088,7 +1088,7 @@ def musicThumbnailing(x, Fs, shortTermSize=1.0, shortTermStep=0.5, thumbnailSize
     In particular the following steps are followed:
      - Extract short-term audio features. Typical short-term window size: 1 second
      - Compute the self-silimarity matrix, i.e. all pairwise similarities between feature vectors
-      - Apply a diagonal mask is as a moving average filter on the values of the self-similarty matrix. 
+      - Apply a diagonal mask is as a moving average filter on the values of the self-similarty matrix.
        The size of the mask is equal to the desirable thumbnail length.
       - Find the position of the maximum value of the new (filtered) self-similarity matrix.
        The audio segments that correspond to the diagonial around that position are the selected thumbnails
@@ -1112,7 +1112,7 @@ def musicThumbnailing(x, Fs, shortTermSize=1.0, shortTermStep=0.5, thumbnailSize
      [Fs, x] = basicIO.readAudioFile(inputFile)
      [A1, A2, B1, B2] = musicThumbnailing(x, Fs)
 
-    [1] Bartsch, M. A., & Wakefield, G. H. (2005). Audio thumbnailing of popular music using chroma-based representations. 
+    [1] Bartsch, M. A., & Wakefield, G. H. (2005). Audio thumbnailing of popular music using chroma-based representations.
     Multimedia, IEEE Transactions on, 7(1), 96-104.
     '''
     x = audioBasicIO.stereo2mono(x)

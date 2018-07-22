@@ -96,13 +96,14 @@ def readAudioFile(path):
             strsig = s.readframes(nframes)
             x = numpy.fromstring(strsig, numpy.short).byteswap()
             Fs = s.getframerate()
-        elif extension.lower() == '.mp3' or extension.lower() == '.wav' or extension.lower() == '.au':
-            try:
-                audiofile = AudioSegment.from_file(path)
+        elif extension.lower() == '.mp3' or extension.lower() == '.wav' or extension.lower() == '.au' or extension.lower() == '.flac':
+#            try:
+#                import pdb; pdb.set_trace()
+            audiofile = AudioSegment.from_file(path)
             # except pydub.exceptions.CouldntDecodeError:
-            except:
-                print("Error: file not found or other I/O error. (DECODING FAILED)")
-                return (-1, -1)
+#            except:
+#                print("Error: file not found or other I/O error. (DECODING FAILED)")
+#                return (-1, -1)
 
             if audiofile.sample_width == 2:
                 data = numpy.fromstring(audiofile._data, numpy.int16)

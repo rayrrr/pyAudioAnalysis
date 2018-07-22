@@ -620,11 +620,11 @@ def stFeatureExtraction(signal, Fs, Win, Step):
         '''
         if countFrames>1:
             delta = curFV - prevFV
-            curFVFinal = numpy.concatenate((curFV, delta))            
+            curFVFinal = numpy.concatenate((curFV, delta))
         else:
             curFVFinal = numpy.concatenate((curFV, curFV))
         prevFV = curFV
-        stFeatures.append(curFVFinal)        
+        stFeatures.append(curFVFinal)
         '''
         # end of delta
         Xprev = X.copy()

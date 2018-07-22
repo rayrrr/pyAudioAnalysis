@@ -10,7 +10,7 @@ from pyAudioAnalysis import audioBasicIO
 
 def annotation2files(wavFile, csvFile):
     '''
-        Break an audio stream to segments of interest, 
+        Break an audio stream to segments of interest,
         defined by a csv file
 
         - wavFile:    path to input wavfile
